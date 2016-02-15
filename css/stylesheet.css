@@ -1,0 +1,359 @@
+* {
+  font-family: 'Lato', sans-serif;
+  font-weight: lighter;
+  font-size: 20px;
+  font-stretch: extra-expanded;
+}
+
+body {
+  margin:0px;
+}
+
+
+/*header-navigation*/
+.fixheader {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  margin-top: 0px;
+  z-index: 9999;
+}
+
+.main-nav ul {
+  height: 30px;
+  padding-top: 8px;
+}
+
+.main-nav li{
+  display: inline;
+  height: auto;
+  text-align: center;
+}
+
+.main-nav span {
+  float:right;
+}
+
+.main-nav span li {
+  display: inline;
+  width:100px;
+  padding-right: 40px;
+}
+
+.main-nav a {
+  text-decoration: none;
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+
+/*about*/
+.content {
+  width:100%;
+}
+
+.platz {
+  height: 150px;
+}
+
+.white {
+  padding: 100px;
+  text-align: center;
+  position: relative;
+}
+
+.lara {
+  display: block;
+  width: 200px;
+  height: 200px;
+  padding-left: 70px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lara img {
+  width: 200px;
+}
+/*Heißt nur yellow, da die Farbe mal gelb war; Class-name ist geblieben*/
+.yellow {
+  display: inline-block;
+  margin-top: -160px;
+  margin-bottom: 100px;
+  width: 250px;
+  height: 250px;
+  opacity: 0.35;
+  background-color: rgb(250,146,134);
+}
+
+.text {
+  display: inline-block;
+  width: 280px;
+  height: 180px;
+  text-align: left;
+  margin-left: 2%;
+  line-height: 105%;
+  font-size: 30px;
+}
+
+#portfolio {
+  height: 150px;
+  width: 0;
+}
+
+/*portfolio-navigation*/
+.grid {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.grid li {
+	float: left;
+	width: 250px;
+  height: 250px;
+  margin: 10px;
+}
+
+.grid img {
+	display: block;
+  width: 250px;
+  height: 250px;
+}
+
+/*hover-effect*/
+.overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(252,189,182,0.85);
+  text-align: center;
+}
+
+.overlay p {
+  margin-top: 43%;
+  font-size: 1.3em;
+}
+
+li:hover .overlay {
+  display: block;
+}
+
+li {
+  position: relative;
+  list-style: none;
+  width: 200px;
+  height: 200px;
+}
+
+
+/*contact*/
+.contact {
+  margin-top: 1200px;
+  height: 600px;
+  position: relative;
+}
+
+.color {
+  display: inline-block;
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  opacity: 0.2;
+  background-color: rgb(250,146,134);
+  margin-left: 47%;
+}
+
+.contacttext {
+  display: inline-block;
+  float: right;
+  width: 200px;
+  height: auto;
+  text-align: right;
+  margin: 20px 50%;
+}
+
+.contacttext p {
+  margin-bottom: 0px;
+  line-height: 130%;
+  z-index: 8888;
+}
+
+.contactinfo {
+  width: 250px;
+  height: 250px;
+  margin-left: 50%;
+  display: block;
+  z-index: 8888;
+}
+
+.contactinfo p {
+  display: inline-block;
+  height: auto;
+  margin-top: -18px;
+  line-height: 130%;
+}
+
+.contactinfo a {
+  text-decoration: none;
+}
+
+.colorsmall {
+  width: 25px;
+  height: 25px;
+  opacity: 0.6;
+  background-color: rgb(250,146,134);
+  margin: -14px 49% 0 0;
+  display: inline-block;
+  float: right;
+}
+
+
+/*breakpoint no1*/
+@media only screen and (max-width: 980px) {
+.text {
+  width: 200px;
+}
+
+.yellow {
+  margin-bottom: 150px;
+}
+
+.grid {
+  width: 600px;
+}
+
+.overlay {
+  display: block;
+  background: rgba(255,255,255,0);
+}
+
+.overlay p {
+  margin-top: 76%;
+  padding: 10px 0 18px 0;
+  background-color: rgba(255,255,255,0.5);
+}
+
+#portfolio {
+  height: 50px;
+}
+
+}
+
+
+/*breakpoint no2*/
+@media only screen and (max-width: 670px) {
+
+#about {
+  display: none;
+}
+
+.grid {
+  width: 280px;
+}
+
+.fixheader {
+  height: 280px;
+  position: absolute;
+}
+
+.main-nav ul {
+  padding: 0;
+}
+
+.main-nav span {
+  float:none;
+}
+
+.main-nav ul li,
+.main-nav ul span li {
+  display: block;
+  height: auto;
+  width: 100%;
+  padding: 20px 0 0 0;
+}
+
+.main-nav ul li a {
+  font-weight: normal;
+}
+
+.main-nav ul span li a {
+  font-weight: lighter;
+}
+
+.main-nav a {
+  font-size: 30px;
+}
+
+.platz {
+  height: 250px;
+}
+
+.yellow {
+  display: block;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 200px;
+}
+
+.lara {
+  padding-left: 20%;
+}
+
+.text {
+  height: 260px;
+  margin-left: 10%;
+}
+
+.contact {
+  margin-top: 1800px;
+  height: 400px;
+}
+
+.grid li {
+  margin: 10px 0 0 0;
+}
+
+.grid ul {
+padding-left: 20px;
+}
+
+.contacttext {
+  margin: 0 25% 40px 0;
+  text-align: center;
+}
+
+.contactinfo {
+  margin-left: 20%;
+  text-align: center;
+}
+
+.contactinfo p {
+  line-height: 200%;
+}
+
+.color {
+  opacity: 0.18;
+  width: 90px;
+  height: 90px;
+}
+
+.colorsmall {
+  margin-right: 45%;
+  margin-top: 20px;
+}
+
+
+}
