@@ -252,7 +252,7 @@ li {
 
 
 /*breakpoint no2*/
-@media screen, handheld and (max-width: 640px) {
+@media only screen and (max-width: 640px) {
 
 #about {
   display: none;
