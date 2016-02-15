@@ -220,7 +220,7 @@ li {
 
 
 /*breakpoint no1*/
-@media screen, handheld and (max-width: 980px) {
+@media only screen and (max-width: 980px) {
 .text {
   width: 200px;
 }
